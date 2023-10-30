@@ -13,8 +13,8 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --purple: #8003FD;
-  --blue: #37A5EC;
+  --lovely-purple: #7F38EC;
+  --Aqua: #37A5EC;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -334,7 +334,7 @@ template {
     Base
 ============= */
 body {
-  background-color: var(--black);
+  background-color: var(--lovely-purple);
 }
 
 /* =============
