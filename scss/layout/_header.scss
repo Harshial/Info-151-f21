@@ -1,3 +1,25 @@
 /* =============
     Header
 ============= */
+header{
+    nav{
+        ul{
+            li{
+                a{
+                 
+                }
+
+            }
+
+            #Trial{
+                a{
+                background-color: var(--Aqua);
+                color: var(--white);
+                padding: 20px 28px;
+                border-radius: 6px;
+                }
+
+            }
+        }
+    }
+}
