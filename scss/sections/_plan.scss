@@ -1,0 +1,31 @@
+/* =============
+   Plan
+============= */
+#plan{
+    ul{
+        li{
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 14px;
+            border: 2px solid var(--light-grey)
+
+    
+        }
+    }
+}
+li{
+    h1{
+        margin-bottom: 30px;
+    }
+}
+.purple{
+    background-color: var(--purple);
+    color: var(--white)
+}
+.grey{
+    color: var(--grey);
+
+}
+.color{
+    color: var(--grey);
+}

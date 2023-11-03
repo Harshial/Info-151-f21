@@ -13,6 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --light-grey: #F2F2F2;
+  --blue: #00B6FF;
+  --light-blue: #BDECFF;
+  --purple: #5E00BC;
+  --grey: #9A9A9A;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,12 +336,36 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--light-grey);
+}
+
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
+.blue-btn {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
 /* =============
     Forms
 ============= */
@@ -366,3 +395,29 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+   Plan
+============= */
+#plan ul li {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 14px;
+  border: 2px solid var(--light-grey);
+}
+
+li h1 {
+  margin-bottom: 30px;
+}
+
+.purple {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.color {
+  color: var(--grey);
+}
