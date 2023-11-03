@@ -13,6 +13,9 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --navy-blue: #152549;
+  --blue: #33BDF5;
+  --grey: #96979B;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,8 +334,8 @@ template {
 /* =============
     Base
 ============= */
-body {
-  background-color: var(--navy-blue);
+#validation {
+  margin-top: 80px;
 }
 
 /* =============
@@ -382,13 +385,23 @@ textarea {
 /* =============
     Header
 ============= */
-header footer section div img {
-  margin-bottom: 30px;
+.color {
+  color: var(--white);
 }
 
 /* =============
     Footer
 ============= */
-/* =============
-    footer
-============= */
+footer #footer-top {
+  padding: 80px 0;
+  color: var(--grey);
+  background-color: var(--navy-blue);
+}
+footer #footer-bottom {
+  color: var(--grey);
+  background-color: var(--navy-blue);
+  padding: 30px 0;
+}
+footer section h2 {
+  margin-bottom: 20px;
+}

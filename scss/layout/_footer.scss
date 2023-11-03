@@ -1,3 +1,22 @@
 /* =============
     Footer
 ============= */
+footer{
+    #footer-top{
+        padding: 80px 0;
+        color: var(--grey);
+        background-color: var(--navy-blue);
+    }
+
+
+    #footer-bottom{
+        color: var(--grey);
+        background-color: var(--navy-blue);
+        padding: 30px 0;
+    }
+    section{
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+}
