@@ -1,3 +1,38 @@
 /* =============
     Navigation
 ============= */
+
+a{
+    text-decoration: none;
+}
+
+
+nav{
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            list-style: none;
+            a:link, a:visited{
+                color: var(--grey);
+
+            }
+
+            a:hover, a:active{
+
+            }
+            a.aqua-link{
+            
+            }
+            
+
+            
+
+            }
+            a.selected{
+                color: var(--Aqua);
+
+           
+            }
+        }
+    }
