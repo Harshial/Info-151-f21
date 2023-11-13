@@ -13,26 +13,33 @@ nav{
         justify-content: flex-end;
         li{
             list-style: none;
+            margin-left: 25px;
             a:link, a:visited{
-                color: var(--grey);
+                color:gainsboro;
+                Font-size: rem-calc(20);
+                font-size: 600;
+                transition: 0.25s;
 
             }
 
             a:hover, a:active{
-
-            }
-            a.aqua-link{
-            
-            }
+                color: aqua;
             
 
-            
-
-            }
-            a.selected{
-                color: var(--Aqua);
-
-           
             }
         }
-    }
+        #Trial{
+            margin-left: 100px;
+            margin-right: 150px;
+        }
+        
+        }
+            
+            }
+        
+
+           
+          
+
+
+    

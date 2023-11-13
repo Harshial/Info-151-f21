@@ -10,4 +10,12 @@ background-color: var(--Aqua);
 color: var(--white);
 padding: 20px 28px;
 border-radius: 6px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.blue-btn:hover{
+    background-color: aliceblue;
+    color: aqua;
+
 }

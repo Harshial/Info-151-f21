@@ -349,6 +349,8 @@ h1, h2, h3, h4, h5 {
 p {
   margin: 0;
   padding: 0;
+  margin-top: 20px;
+  color: gainsboro;
 }
 
 ul {
@@ -368,6 +370,13 @@ button {
   color: var(--white);
   padding: 20px 28px;
   border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blue-btn:hover {
+  background-color: aliceblue;
+  color: aqua;
 }
 
 /* =============
@@ -407,26 +416,37 @@ nav ul {
 }
 nav ul li {
   list-style: none;
+  margin-left: 25px;
 }
 nav ul li a:link, nav ul li a:visited {
-  color: var(--grey);
+  color: gainsboro;
+  Font-size: 1.25rem;
+  font-size: 600;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
-nav ul a.selected {
-  color: var(--Aqua);
+nav ul li a:hover, nav ul li a:active {
+  color: aqua;
+}
+nav ul #Trial {
+  margin-left: 100px;
+  margin-right: 150px;
 }
 
 /* =============
     Header
 ============= */
-header nav ul #Trial a {
+header {
+  padding: 22px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+nav ul #Trial a {
   background-color: var(--Aqua);
   color: var(--white);
   padding: 20px 28px;
   border-radius: 6px;
-}
-
-.color {
-  color: var(--white);
 }
 
 /* =============
@@ -436,5 +456,14 @@ header nav ul #Trial a {
     Hero
 ============= */
 #hero {
-  margin-top: 110px;
+  margin-top: 60px;
+}
+#hero section h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.blue-btn:hover {
+  background-color: aliceblue;
+  color: aqua;
 }

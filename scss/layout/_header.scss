@@ -2,6 +2,10 @@
     Header
 ============= */
 header{
+    padding: 22px;
+    border-radius: 8px;
+    margin-top: 20px;
+    }
     nav{
         ul{
             li{
@@ -22,7 +26,4 @@ header{
             }
         }
     }
-}
-.color{
-    color: var(--white);
-}
+
