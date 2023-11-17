@@ -2,25 +2,40 @@
    Plan
 ============= */
 #plan{
-    ul{
-        li{
-            background-color: var(--white);
-            padding: 30px;
-            border-radius: 14px;
-            border: 2px solid var(--light-grey)
-
-    
-        }
+  
+    #plan-intro{
+        text-align: center;
     }
+    h3{
+        margin-top: 20px;
+    }
+
+  
+    
+}
+
+
+li{
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 14px;
+    border: 2px solid var(--light-grey)
+
 }
 li{
+
+    display: inline-block;
     h1{
         margin-bottom: 30px;
+       
     }
+   
 }
 .purple{
+    width: 100%;
     background-color: var(--purple);
     color: var(--white)
+
 }
 .grey{
     color: var(--grey);
@@ -29,3 +44,4 @@ li{
 .color{
     color: var(--grey);
 }
+
