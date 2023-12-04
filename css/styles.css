@@ -336,6 +336,19 @@ template {
 ============= */
 body {
   background-color: var(--lovely-purple);
+  font-family: sans-serif;
+}
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
 }
 
 /* =============
@@ -456,7 +469,11 @@ nav ul #Trial a {
     Hero
 ============= */
 #hero {
-  margin-top: 60px;
+  margin-top: 110px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 34% auto;
+  grid-template-columns: 34% auto;
 }
 #hero section h1 {
   font-size: 50px;

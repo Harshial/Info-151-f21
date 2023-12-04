@@ -3,4 +3,19 @@
 ============= */
 body{
     background-color: var(--lovely-purple);
+    font-family: sans-serif;
+
+    main{
+   
+            display: grid;
+            grid-template-columns: auto 1170px auto;
+            grid-template-areas: ". main-grid-item .";
+            #main-grid-item{
+                grid-area: main-grid-item;
+
+        }
+      
+
+        
+    }
 }
