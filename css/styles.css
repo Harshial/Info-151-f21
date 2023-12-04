@@ -18,6 +18,7 @@ html {
   --light-blue: #BDECFF;
   --purple: #5E00BC;
   --grey: #9A9A9A;
+  --baby-blue: #D7F6FF;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -28,7 +29,8 @@ html {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15; /* 1 */
+  font-size: 80%;
+  line-height: 4.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -338,6 +340,8 @@ template {
 ============= */
 body {
   background-color: var(--light-grey);
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* =============
@@ -353,8 +357,9 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-  margin: 0;
-  padding: 0;
+  margin-top: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 ul {
@@ -368,10 +373,21 @@ ul {
 .blue-btn {
   background-color: var(--blue);
   color: var(--white);
+  margin-bottom: 30px;
   width: 190px;
   height: 50px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+.light-btn {
+  background-color: var(--baby-blue);
+  color: var(--blue);
+  margin-bottom: 30px;
+  width: 190px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
 }
 
 /* =============
@@ -406,37 +422,52 @@ textarea {
 /* =============
    Plan
 ============= */
+#plan {
+  margin-top: 150px;
+      grid-template-areas: ". main-content .";
+}
+#plan #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-content;
+}
 #plan #plan-intro {
   text-align: center;
 }
 #plan h3 {
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 li {
   background-color: var(--white);
-  padding: 30px;
-  border-radius: 14px;
+  text-align: center;
+  padding: 0px;
+  border-radius: 5px;
   border: 2px solid var(--light-grey);
 }
 
-li {
+ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+ul li {
   display: inline-block;
 }
-li h1 {
+ul li h1 {
   margin-bottom: 30px;
 }
-
-.purple {
+ul .purple {
   width: 100%;
   background-color: var(--purple);
   color: var(--white);
 }
-
-.grey {
+ul .grey {
   color: var(--grey);
 }
-
-.color {
+ul .color {
   color: var(--grey);
 }

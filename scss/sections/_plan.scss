@@ -2,13 +2,23 @@
    Plan
 ============= */
 #plan{
+    margin-top: 150px;
+
+  
+    grid-template-areas: ". main-content .";
+    #main-grid-item{
+        grid-area: main-content;
+
+    }
   
     #plan-intro{
         text-align: center;
     }
     h3{
         margin-top: 20px;
+        margin-bottom: 50px;
     }
+    
 
   
     
@@ -16,12 +26,25 @@
 
 
 li{
+
+
     background-color: var(--white);
-    padding: 30px;
-    border-radius: 14px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 5px;
     border: 2px solid var(--light-grey)
 
+   
+    
+
 }
+
+
+ul{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+
 li{
 
     display: inline-block;
@@ -35,6 +58,8 @@ li{
     width: 100%;
     background-color: var(--purple);
     color: var(--white)
+    
+    
 
 }
 .grey{
@@ -45,3 +70,4 @@ li{
     color: var(--grey);
 }
 
+}
