@@ -13,7 +13,7 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --navy-blue: #152549;
+  --navy-blue: #0E0E15;
   --blue: #33BDF5;
   --grey: #96979B;
 }
@@ -338,6 +338,14 @@ template {
   margin-top: 80px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -368,7 +376,9 @@ ul {
   background-color: rgb(46, 147, 230);
   border: none;
   border-radius: 2px;
-  width: 60px;
+  height: 39px;
+  width: 70px;
+  padding: 0%;
 }
 
 /* =============
@@ -406,7 +416,7 @@ textarea {
     Footer
 ============= */
 footer ul li {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 footer ul li a {
   color: var(--grey);
@@ -414,22 +424,80 @@ footer ul li a {
 }
 footer #footer-top {
   padding: 80px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". ftgi .";
   color: var(--grey);
   background-color: var(--navy-blue);
 }
-footer #footer-bottom {
+
+#footer-top-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: ftgi;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 20% 20% 25%;
+  grid-template-columns: 30% 20% 20% 25%;
+}
+#footer-top-grid-item section #social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+#footer-top-grid-item section #social-links li {
+  margin-right: 40px;
+}
+#footer-top-grid-item section #social-links a {
+  display: -ms-grid;
+  display: grid;
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--grey);
+  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#footer-top-grid-item section p {
+  margin-top: 20px;
+  padding-right: 50px;
+}
+#footer-top-grid-item section h2 {
+  margin-bottom: 20px;
+}
+#footer-top-grid-item section a:link, #footer-top-grid-item section a:visited {
+  color: var(--grey);
+}
+#footer-top-grid-item section a:hover, #footer-top-grid-item section a:active {
+  color: var(--blue);
+}
+
+#footer-bottom {
   text-align: center;
   color: var(--grey);
   background-color: var(--navy-blue);
   padding: 30px 0;
 }
-footer section h2 {
+
+section h2 {
   margin-bottom: 20px;
 }
-footer form input {
+
+form input {
   color: var(--grey);
   background-color: var(--navy-blue);
-  border-color: var(--grey);
-  border-style: solid;
-  border-radius: 2px;
+  border: 1px solid var(--grey);
+  margin-top: 20px;
+  height: 37px;
+  width: 200px;
+  text-align: center;
+  padding: 0%;
+  margin-right: -7px;
 }
