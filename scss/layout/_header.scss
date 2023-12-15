@@ -2,18 +2,46 @@
     Header
 ============= */
 header{
-    padding: 12px 24px;
+    padding: 1px 10px;
+    
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "logo burger"
-    "nav nav";
+    grid-template-columns: 50% 35% auto;
+    grid-template-areas: "logo sign burger"
+    "nav nav nav";
+
+    @include md{
+        grid-template-columns: 50% 10% auto;
+    }
+
+    @include xl{
+        grid-template-columns: 85% 13% 2%;
+        grid-area: 
+        "logo sign burger";
+    }
 
     #logo-container{
         display: flex;
         align-items: center;
         grid-area: logo;
 
+        @include xl{
+            height: 100px;
+        }
+
     }
+
+    #sign-btn{
+        display: flex;
+        align-items: center;
+        grid-area: sign;
+        
+
+  
+    
+
+ 
+
+  }
 
     #burger-container{
         display: flex;

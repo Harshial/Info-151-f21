@@ -366,6 +366,25 @@ p {
 /* =============
     Buttons
 ============= */
+.btn {
+  margin-top: 25px;
+  margin-left: 5px;
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 300;
+}
+
+.btns {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 300;
+}
+
 /* =============
     Forms
 ============= */
@@ -415,7 +434,6 @@ nav ul li a:link, nav ul li a:visited {
   color: gray;
   -webkit-transition: 0.25sec;
   transition: 0.25sec;
-  border-top: 1px solid black;
 }
 nav ul li a:hover, nav ul li a:active {
   color: var(--black);
@@ -432,12 +450,25 @@ nav ul li a.btns {
     Header
 ============= */
 header {
-  padding: 12px 24px;
+  padding: 1px 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% auto;
-  grid-template-columns: 50% auto;
-      grid-template-areas: "logo burger" "nav nav";
+  -ms-grid-columns: 50% 35% auto;
+  grid-template-columns: 50% 35% auto;
+      grid-template-areas: "logo sign burger" "nav nav nav";
+}
+@media (min-width: 768px) {
+  header {
+    -ms-grid-columns: 50% 10% auto;
+    grid-template-columns: 50% 10% auto;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    -ms-grid-columns: 85% 13% 2%;
+    grid-template-columns: 85% 13% 2%;
+    grid-area: "logo sign burger";
+  }
 }
 header #logo-container {
   -ms-grid-row: 1;
@@ -450,9 +481,25 @@ header #logo-container {
           align-items: center;
   grid-area: logo;
 }
-header #burger-container {
+@media (min-width: 1200px) {
+  header #logo-container {
+    height: 100px;
+  }
+}
+header #sign-btn {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: sign;
+}
+header #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,7 +514,7 @@ header #burger-container {
 header nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+  -ms-grid-column-span: 3;
   grid-area: nav;
 }
 
