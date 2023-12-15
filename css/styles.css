@@ -13,6 +13,8 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --red: #FF0101;
+  --blue: #005662;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,6 +333,14 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0px;
+  margin: px;
+}
+ul li {
+  list-style: none;
+}
+
 #validation-btn {
   text-align: center;
   margin-top: 100px;
@@ -339,6 +349,20 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
 /* =============
     Buttons
 ============= */
@@ -365,9 +389,88 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+nav ul li a:link, nav ul li a:visited {
+  padding: 15px;
+  display: inline-block;
+  margin-bottom: 12px;
+  color: gray;
+  -webkit-transition: 0.25sec;
+  transition: 0.25sec;
+  border-top: 1px solid black;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--black);
+}
+nav ul li a.btns {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 400;
+}
+
 /* =============
     Header
 ============= */
+header {
+  padding: 12px 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+  grid-template-columns: 50% auto;
+      grid-template-areas: "logo burger" "nav nav";
+}
+header #logo-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: logo;
+}
+header #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: burger;
+}
+header nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+
 /* =============
     Footer
 ============= */
