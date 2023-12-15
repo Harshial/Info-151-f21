@@ -6,19 +6,41 @@ a{
 
 }
 nav{
+    display: none;
+    
+    @include xl{
+        display: block;
+    }
     ul{
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
         align-items: flex-end;
+
+        @include xl{
+            flex-direction: row;
+        }
         li{
+
+            @include xl{
+                height: 100%;
+            }
+
+          
+            }
             a:link, a:visited{
                 padding: 15px;
                 display: inline-block;
                 margin-bottom: 12px;
                 color: gray;
                 transition: 0.25sec;
-                border-top: 1px solid black;
+
+                @include xl{
+                    height: 100%;
+                }
+
+               
+               
                
                 
 
@@ -34,8 +56,12 @@ nav{
                 font-weight: 400;
                 
             }
+           
 
             }
-            }
         }
+
+            
+            
+        
     

@@ -3,10 +3,22 @@
 ============= */
 header{
     padding: 12px 24px;
+   
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "logo burger"
     "nav nav";
+
+    @include xl{
+        grid-template-columns: 25% 75%;
+        grid-template-areas: 
+        "logo nav btns";
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+
+    }
 
     #logo-container{
         display: flex;
@@ -21,12 +33,25 @@ header{
         align-items: center;
         grid-area: burger;
 
+        @include xl{
+            display: none;
+        }
+
 
     }
 
     nav{
        
         grid-area: nav;
+    }
+
+    #btns{
+        display: flex;
+        margin-left: 350px;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: btns;
+        
     }
 
 }

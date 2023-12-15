@@ -1,3 +1,21 @@
 /* =============
     Buttons
 ============= */
+.signin{
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.signup{
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}

@@ -366,6 +366,25 @@ p {
 /* =============
     Buttons
 ============= */
+.signin {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.signup {
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
 /* =============
     Forms
 ============= */
@@ -393,6 +412,14 @@ a {
   text-decoration: none;
 }
 
+nav {
+  display: none;
+}
+@media (min-width: 1200px) {
+  nav {
+    display: block;
+  }
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,19 +435,36 @@ nav ul {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-nav ul li a:link, nav ul li a:visited {
+@media (min-width: 1200px) {
+  nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  nav ul li {
+    height: 100%;
+  }
+}
+nav ul a:link, nav ul a:visited {
   padding: 15px;
   display: inline-block;
   margin-bottom: 12px;
   color: gray;
   -webkit-transition: 0.25sec;
   transition: 0.25sec;
-  border-top: 1px solid black;
 }
-nav ul li a:hover, nav ul li a:active {
+@media (min-width: 1200px) {
+  nav ul a:link, nav ul a:visited {
+    height: 100%;
+  }
+}
+nav ul a:hover, nav ul a:active {
   color: var(--black);
 }
-nav ul li a.btns {
+nav ul a.btns {
   background-color: var(--blue);
   color: var(--white);
   border-radius: 8px;
@@ -438,6 +482,17 @@ header {
   -ms-grid-columns: 50% auto;
   grid-template-columns: 50% auto;
       grid-template-areas: "logo burger" "nav nav";
+}
+@media (min-width: 1200px) {
+  header {
+    -ms-grid-columns: 25% 75%;
+    grid-template-columns: 25% 75%;
+        grid-template-areas: "logo nav btns";
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
 }
 header #logo-container {
   -ms-grid-row: 1;
@@ -464,11 +519,44 @@ header #burger-container {
           align-items: center;
   grid-area: burger;
 }
+@media (min-width: 1200px) {
+  header #burger-container {
+    display: none;
+  }
+}
 header nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: nav;
+}
+header #btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 350px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: btns;
+}
+@media (min-width: 1200px) {
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  header #btns {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
 }
 
 /* =============
