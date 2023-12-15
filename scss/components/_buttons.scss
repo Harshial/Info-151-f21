@@ -1,6 +1,15 @@
 /* =============
     Buttons
 ============= */
+
+button{
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
 .signin{
     background-color: var(--blue);
     color: var(--white);
