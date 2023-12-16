@@ -333,6 +333,12 @@ template {
 /* =============
     Base
 ============= */
+.show-sign-in-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 ul {
   padding: 0px;
   margin: px;
@@ -559,7 +565,7 @@ header nav {
   -ms-grid-column-span: 2;
   grid-area: nav;
 }
-header #btns {
+header #sign-in-up-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,7 +588,7 @@ header #btns {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
   }
-  header #btns {
+  header #sign-in-up-btn {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
@@ -604,7 +610,7 @@ header #btns {
 /* =============
     Sign In
 ============= */
-#sign-in {
+#sign-in-container {
   background-color: rgba(0, 86, 98, 0.5647058824);
   height: 100vh;
   padding: 16px;
@@ -613,9 +619,6 @@ header #btns {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-top: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -623,6 +626,7 @@ header #btns {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  display: none;
 }
 
 form #close-btn-container {

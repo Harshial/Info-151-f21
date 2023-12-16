@@ -1,7 +1,7 @@
 /* =============
     Sign In
 ============= */
-#sign-in{
+#sign-in-container{
     //background-color: var(--blue);
     background-color: #00566290;
     height: 100vh;
@@ -11,10 +11,13 @@
    width: 100%;
    box-sizing: border-box;
    margin-top: 20vh;
-   display: flex;
+   //display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+    
+    
+    display: none;
 
  
 
