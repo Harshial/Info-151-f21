@@ -1,0 +1,7 @@
+/* =============
+    Fancybox
+============= */
+#fancybox {
+  display: -ms-grid;
+  display: grid;
+}

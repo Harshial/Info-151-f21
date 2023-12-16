@@ -1,3 +1,9 @@
+Fancybox.bind()
+
+
+
+
+
 //alert("Hello Class!");
 
 var mainNav = document.querySelector("#mainNav");
