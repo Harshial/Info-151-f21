@@ -1,24 +1,25 @@
 //alert("Hello Class!");
 
 var mainNav = document.querySelector("#mainNav");
-var signInUpBtn = document.querySelector("#sign-in-up-btn")
+var signInUpButton = document.querySelector("#sign-in-up-button")
 var burgerBtn = document.querySelector("#burger-container button");
-console.log(burgerBtn);
+//console.log(burgerBtn);
 
 var canYouSeeMainNav = false;
 
 
 function showNav(){
-   console.log("button clicked");
+   //console.log("button clicked");
     if(canYouSeeMainNav === false){
         mainNav.classList.add("showMainNav");
 
-        signInUpBtn.classList.add("showSignIn");
+        signInUpButton.classList.add("showSignIn");
         canYouSeeMainNav = true;
     }else{
+        console.log("hide menu");
         mainNav.classList.remove("showMainNav");
 
-        signInUpBtn.classList.remove("showSignIn");
+        signInUpButton.classList.remove("showSignIn");
 
 
         canYouSeeMainNav = false;
@@ -38,7 +39,7 @@ var signInContainer = document.querySelector("#sign-in-container");
 function showSignInModal(){
 //console.log("show modal now");
 
-signInContainer.classList.add("#Show-sign-in-container");
+signInContainer.classList.add("Show-sign-in-container");
 }
 
-SignInBtn.addEventListener("click", showSignInModal);
+signInBtn.addEventListener("click", showSignInModal);
