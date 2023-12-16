@@ -1,0 +1,43 @@
+/* =============
+    Sign In
+============= */
+#sign-in{
+    //background-color: var(--blue);
+    background-color: #00566290;
+    height: 100vh;
+    
+    padding: 16px;
+   position: fixed; 
+   width: 100%;
+   box-sizing: border-box;
+   margin-top: 20vh;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+ 
+
+    
+
+
+  }
+    form{
+
+        #close-btn-container{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+        }
+
+
+
+        input{
+           
+           box-sizing: border-box;
+           height: 60px;
+           width: 300px;
+           margin-bottom: 24px;
+        }
+    
+}
